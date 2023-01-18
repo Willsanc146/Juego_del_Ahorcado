@@ -32,6 +32,10 @@
     grid-row: 3;
 }
 
+.icono-teclado {
+    width: 20px;
+}
+
 .avisoPerdiste,
 .avisoGanaste {
     display: flex;
