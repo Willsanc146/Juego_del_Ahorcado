@@ -1,0 +1,236 @@
+html,
+main,
+.palabra,
+.warning,
+.index-button {
+    display: flex;
+}
+
+.warning,
+.slot {
+    z-index: -1;
+}
+
+html,
+main {
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_palabra {
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.palabra {
+    flex-direction: column;
+    min-width: 300px;
+    width: 100%;
+    height: 85%;
+    padding: 5px;
+    align-items: center;
+}
+
+.palabra1 {
+    width: 100%;
+    height: 5em;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.warning {
+    width: 60%;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.warning p {
+    font-size: 12px;
+}
+
+.index-button {
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 0;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.buttonG,
+.buttonC {
+    width: 90%;
+    padding: 1rem;
+    margin: 1em 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttonG {
+    background: #2c3a47;
+}
+
+.buttonC {
+    background: #7a49ff;
+}
+
+.buttonG,
+.buttonC a {
+    color: #f1f1f1;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+form {
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.tittle_lista {
+    padding: 0 3em;
+}
+
+.cardsList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 60vh;
+    height: 30vh;
+}
+
+.card {
+    width: 20%;
+    padding: 13px;
+    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 4px 0px;
+    position: relative;
+}
+
+.word {
+    padding: 8px;
+}
+
+.completeIcon {
+    color: rgba(62, 161, 219, 1);
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: rgba(62, 161, 219, 1);
+}
+
+.trashIcon:hover {
+    color: #f00;
+}
+
+.deleteConfirmationPop {
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    z-index: 99;
+    width: 100%;
+    top: -100px;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Estilos para pantallas pequeñas */
+    .container {
+        padding-top: 20em;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container_palabra {
+        width: 100%;
+    }
+
+    .palabra {
+        min-width: 400px;
+        height: auto;
+        padding: 4px;
+    }
+
+    .warning {
+        width: auto;
+        height: 80px;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .warning p {
+        font-size: 20px;
+    }
+
+    .index-button {
+        width: 100%;
+    }
+
+    .buttonG,
+    .buttonC {
+        width: 70%;
+    }
+
+    .tittle_lista {
+        padding: 2em auto;
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    .cardsList {
+        justify-content: center;
+    }
+
+    .card {
+        min-width: 300px;
+        padding: 1em 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .palabra {
+        min-width: 350px;
+        padding: 4px;
+        justify-items: auto;
+        justify-content: space-around;
+    }
+
+    .palabra1 {
+        display: flex;
+        min-width: 250px;
+        height: 110px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

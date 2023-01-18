@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego del Ahorcado</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+			integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/juegoNuevo.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+	</head>
+	<body class="juegoAhorcadoNuevo">
+		<header>
+			<div class="inner-width">
+				<h1>JUEGO DEL AHORCADO</h1>
+				<div class="menu-icon">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</header>
+		<div class="navigation-menu">
+			<nav>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="agregarpalabra.html">AGREGAR NUEVA PALABRA</a></li>
+			</nav>
+		</div>
+		<main class="menu" id="menu">
+			<div class="ahorcado">
+				<canvas class="ahorcado box" id="ahorcado" width="300" height="220">
+				</canvas>
+			</div>
+			<div class="letrasCorrectas">
+				<h4>Letras correctas</h4>
+				<canvas
+					class="letras box"
+					id="letrasCorrectas"
+					width="300"
+					height="100">
+				</canvas>
+			</div>
+			<div class="letrasIncorrectas">
+				<h4>Letras incorrectas</h4>
+				<canvas
+					class="letras box"
+					id="letrasIncorrectas"
+					width="300"
+					height="100">
+				</canvas>
+			</div>
+			<div class="oportinudades">
+				<span id="intentos"></span>
+			</div>
+		</main>
+		<footer>
+			<img class="logoWAS" src="img/Logo__1.png" alt="Logo de Wiliam Sanchez" />
+			<p class="copyright">Wiliam Sanchez - <span id="currentYear"></span></p>
+		</footer>
+		<script src="js/menu.js"></script>
+		<script type="module" src="js/juegoNuevo.js"></script>
+		<script src="js/año.js"></script>
+	</body>
+</html>
