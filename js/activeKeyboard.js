@@ -1,3 +1,3 @@
-function activarTeclado() {
-	document.body.focus();
-}
+window.onload = function () {
+	document.getElementById('hidden-input').focus();
+};
