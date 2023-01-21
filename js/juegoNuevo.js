@@ -18,7 +18,7 @@ export const palabraJuega = palabra.split('');
 alert('la palabra tiene: ' + palabraJuega.length + ' letras.');
 
 document.addEventListener('keyup', (event) => {
-	let letra = event.key;
+	let letra = String.fromCharCode(event.keyCode);
 	letra = letra.toUpperCase();
 	if (palabraJuega.includes(letra)) {
 		dibujarLetrasCorrectas(letra);
