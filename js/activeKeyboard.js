@@ -1,3 +1,4 @@
-window.onload = function () {
-	document.getElementById('hidden-input').focus();
-};
+const input = document.querySelector('#miInput');
+input.addEventListener('click', function () {
+	this.focus();
+});
