@@ -15,12 +15,7 @@ export function dibujarLetrasIncorrectas(letra) {
 	contexto.font = '24px Arial';
 
 	const palabraJuegaUnida = palabraJuega.join('');
-	if (letra.length > 1) {
-		alert('seleccionaste ' + letra + ' y es una tecla invalida.');
-	} else if (
-		!palabraJuega.includes(letra) &&
-		!letrasIncorrectas.includes(letra)
-	) {
+	if (!palabraJuega.includes(letra) && !letrasIncorrectas.includes(letra)) {
 		letrasIncorrectas.push(letra);
 		contexto.fillText(letra, 10 + (letrasIncorrectas.length - 1) * 30, 30);
 
