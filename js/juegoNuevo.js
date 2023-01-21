@@ -17,22 +17,22 @@ export const palabraJuega = palabra.split('');
 
 alert('la palabra tiene: ' + palabraJuega.length + ' letras.');
 
-const teclas = document.querySelectorAll('.tecla');
+document.addEventListener('keyup', (event) => {
+	let letra = String.fromCharCode(event.keyCode);
+	letra = letra.toUpperCase();
+	if (palabraJuega.includes(letra)) {
+		dibujarLetrasCorrectas(letra);
+	} else {
+		dibujarLetrasIncorrectas(letra);
+	}
+});
 
-// Agrega un evento touchstart a cada tecla
-teclas.forEach((tecla) => {
-	tecla.addEventListener('touchstart', (event) => {
-		// Obtiene el valor de la tecla precionada
-		let letra = event.target.innerText;
-
-		// Convierte la letra a mayúsculas
-		letra = letra.toUpperCase();
-
-		// Comprueba si la letra precionada está en la palabra a adivinar
-		if (palabraJuega.includes(letra)) {
-			dibujarLetrasCorrectas(letra);
-		} else {
-			dibujarLetrasIncorrectas(letra);
-		}
-	});
+document.addEventListener('touchend', (event) => {
+	let letra = event.target.innerText; // Obtiene el valor de la tecla precionada
+	letra = letra.toUpperCase(); // Convierte la letra a mayúsculas
+	if (palabraJuega.includes(letra)) {
+		dibujarLetrasCorrectas(letra);
+	} else {
+		dibujarLetrasIncorrectas(letra);
+	}
 });
