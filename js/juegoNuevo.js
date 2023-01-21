@@ -26,3 +26,15 @@ document.addEventListener('keyup', (event) => {
 		dibujarLetrasIncorrectas(letra);
 	}
 });
+
+function obtenerLetra() {
+	document.addEventListener('keyup', (event) => {
+		let letra = event.key;
+		letra = letra.toUpperCase();
+		if (palabraJuega.includes(letra)) {
+			dibujarLetrasCorrectas(letra);
+		} else {
+			dibujarLetrasIncorrectas(letra);
+		}
+	});
+}
