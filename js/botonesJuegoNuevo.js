@@ -9,5 +9,5 @@ export const botonSalir = document.createElement('button');
 botonSalir.classList.add('botonSalir');
 botonSalir.innerHTML = 'Salir';
 botonSalir.addEventListener('click', function () {
-	location.href = '../index.html';
+	location.href = '/index.html';
 });
