@@ -32,6 +32,10 @@
     grid-row: 3;
 }
 
+#miInput {
+    width: 20px;
+}
+
 .icono-teclado {
     width: 30px
 }
@@ -106,12 +110,6 @@
     background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
     background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
     text-decoration: none;
-}
-
-@media (hover: none) {
-    #miInput {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) {
