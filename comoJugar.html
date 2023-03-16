@@ -17,7 +17,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="css/nav.css" />
-		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/comoJugar.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 	</head>
 	<body>
@@ -31,22 +31,54 @@
 		</header>
 		<div class="navigation-menu">
 			<nav>
-				<li><a href="comoJugar.html">¿COMO JUGAR?</a></li>
 				<li><a href="juegoNuevo.html">JUEGO NUEVO</a></li>
 				<li><a href="agregarpalabra.html">AGREGAR NUEVA PALABRA</a></li>
+				<li><a href="comoJugar.html">¿COMO JUGAR?</a></li>
 			</nav>
 		</div>
 		<main>
-			<div class="i-center">
-				<div class="index-button">
-					<button class="buttonIJ">
-						<a href="juegoNuevo.html">INICIAR JUEGO</a>
-					</button>
-					<button class="buttonANP">
-						<a href="agregarpalabra.html">AGREGAR NUEVA PALABRA</a>
-					</button>
+			<section class="cJugar">
+				<h1 class="titulo_CJugar">Bienvenido</h1>
+				<br />
+				<h4>¿Es tu primera vez jugando?</h4>
+				<br />
+				<p>
+					Por favor dale click en el boton "AGREGAR NUEVA PALABRA". <br />
+					En el cuadro que dice "Ingrese la palabra", escriba la palabra que
+					quiera guardar.<br />
+					Acontinuación le das click en el boton "Guardar" y la palabra
+					aparecera en la parte inferior del cuadro.<br />
+					Puede agregar todas las palabras con las que quieras jugar. Ten
+					presente las siguientes recomendaciones a la hora de guardar las
+					palabras.
+				</p>
+				<br />
+				<h5>1.</h5>
+				<p class="opcion">La palabra no puede contener menos de 3 letras.</p>
+				<br />
+				<h5>2.</h5>
+				<p class="opcion">La palabra no puede contener mas de 10 letras.</p>
+				<br />
+				<h5>3.</h5>
+				<p class="opcion">
+					No agregue números(1,2,3,4,5....) o símbolos especiales(.,$#"&/()"!)
+					en las palabras, afectara la interacción con el juego, ejemplo
+					"4mar!llo, v3rd3, ca&do".
+				</p>
+				<br />
+			</section>
+			<section>
+				<div class="i-center">
+					<div class="index-button">
+						<button class="buttonIJ">
+							<a href="juegoNuevo.html">INICIAR JUEGO</a>
+						</button>
+						<button class="buttonANP">
+							<a href="agregarpalabra.html">AGREGAR NUEVA PALABRA</a>
+						</button>
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer>
 			<img class="logoWAS" src="img/Logo__1.png" alt="Logo de Wiliam Sanchez" />
